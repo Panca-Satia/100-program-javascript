@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rumus Balok</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 60%;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    input {
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hasil {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rumus Balok</h1>
+  <hr />
+  <br>
+  <input type="number" id="panjang" placeholder="Masukan panjang" />
+  <br>
+  <input type="number" id="lebar" placeholder="Masukan lebar" />
+  <br>
+  <input type="number" id="tinggi" placeholder="Masukan tinggi" />
+  <br><br>
+  <button onclick="hitungBalok()">Hitung</button>
+
+  <div class="hasil" id="hasil"></div>
+
+  <script src="balok.js">
+    
+  </script>
+</body>
+</html>

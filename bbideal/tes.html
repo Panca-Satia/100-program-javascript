@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Berat Badan Ideal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: inline-block;
+            padding: 30px;
+            width: 320px;
+            margin: 20px;
+        }
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Menentukan Berat Badan Ideal</h2>
+        <input type="number" id="tinggi" placeholder="Tinggi badan (cm)"><br>
+        <input type="number" id="berat" placeholder="Berat badan (kg)"><br>
+        <button onclick="cekIdeal()">Cek Ideal</button>
+        <div class="result" id="hasil"></div>
+    </div>
+
+    <script src="tes.js">
+       
+    </script>
+</body>
+</html>

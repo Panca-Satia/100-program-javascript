@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas</title>
+    <style>
+      body {
+        width: 50%;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      select {
+        width: 150px;
+        height: 25px;
+      }
+      button {
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pilih angka 1 - 60</h1>
+    <br />
+    <h2 id="hint">semoga beruntung</h2>
+    <br /><br />
+    <form action="">
+      <select id="angka_pilihan">
+        <option value="">Masukan angka</option>
+        <!-- Opsi angka 1-50 -->
+        <script>
+          for (let i = 1; i <= 60; i++) {
+            document.write(`<option value="${i}">${i}</option>`);
+          }
+        </script>
+      </select>
+    </form>
+
+    <br />
+    <br />
+    <span> Kesempatan: <span id="sisa_pilihan"></span> </span>
+    <br /><br /><br />
+    <button id="pilihan">Pilih</button>
+
+    <script src="tebak.js">
+     
+    </script>
+  </body>
+</html>
