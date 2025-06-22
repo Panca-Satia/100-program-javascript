@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkripsi data</title>
+         <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            label {
+                display: block;
+            }
+         </style>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Program Mengenkripsi data
+
+        </h2>
+        <form action="">
+            <label for="inputan">Masukan Data anda :</label>
+            <input type="text" placeholder="masukan Data..." required id="inputan"> 
+            <button type="button" id="button">Kirim</button>
+        </form>
+        <section>
+            <h3>
+                Hasil enkripsi : <span id="hasil"></span>
+            </h3>
+        </section>
+        <div class="footer" style="font-size: 12px; color:#666; margin-top: 30px;">
+            enkripsi
+        </div>
+    </div>
+
+    <script>
+        const inputan = document.getElementById("inputan").ariaValueMax
+        const button = document.getElementById("button")
+        const hasil = document.getElementById("hasil")
+        console.log("tessss")
+
+        button.addEventListener("click", () => {
+            const hasilEnkripsi = btoa(inputan)
+            hasil.textContent = hasilEnkripsi
+        })
+    </script>
+</body>
+</html>
